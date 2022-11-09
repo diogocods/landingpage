@@ -16,7 +16,10 @@ div.landing-page{
     height: 100%;
     position: relative;
     top: 0;
-   
+}
+
+.container-header{
+    height: 90vh;
 }
 header.cabecalho{
     width: 100%;
@@ -87,36 +90,55 @@ a.logo{
     background: #407BFF;
     color: #ffffff;
     padding: 0 7%;
+    position: relative;
 }
 .landing-container section.conteudo{
-    margin: auto;
-    width: 700px;
+    margin-left: 35px;
+    width: 710px;
     position: relative;
     font-size: 1.5em;
+    
 }
 h1.titulo-h1{
     font-size: 2.5rem;
 }
 h2.titulo-h2{
    text-transform: uppercase;
-   font-size: 1.6em;
+   font-size: 1.7em;
 }
-.conteudo-text p{
+h2.titulo-h2 .text-edit{
+    text-transform: uppercase;
+    font-weight: bold;
+ }
+.conteudo p{
+    top: 5px;
+    bottom: 5px;
+    padding: 2px;
     font-size: 0.9em;
+    line-height: 25px;
+    font-weight: 300;
+    position: relative;
+    text-align: justify;
+
+}
+.conteudo-text p.frase{
+    font-size: 0.7em;
+    position: relative;
+    top: 5px;
 }
 span .btns{
     position: relative;
     top: 20px;
 }
-.btns button{
-    width: 20%;
-    display: inline-block;
-    position: relative;
+.conteudo .btns button{
     top: 10px;
+    width: 48%;
     border: none;
-    border-radius: 4px;
     padding: 10px;
-    background: #ffffff;
+    border-radius:4px;
+    position: relative;
+    background:#ffffff;
+    display: inline-block;
 }
 .btns a{
     color: #407BFF;
@@ -125,7 +147,7 @@ span .btns{
 }
 img.landing-banner{
     top: -23px;
-    width: 33%;
+    width: 50%;
     margin: auto;
     padding: 10px;
     position: relative;
@@ -150,77 +172,21 @@ img.landing-banner{
 }
 /* PÀRTE CONTEUDO DA LANDING CONTAINER ATÉ O BANNER*/
 
-/* PÀRTE CONTEUDO DOS PROJETOS*/
-.text-titulo{
-    margin: auto;
-    text-align: center;
-    margin-top: 10px;
-    position: relative;
-    padding: 25px 15px;
-    text-transform: uppercase;
-    color: #407BFF;
-    font-weight: 900;
-    font-size: 1.5em;
-}
-.landing-central{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding: 15px 15px;
-    margin: auto;
-   position: relative;
-   color: #ffffff;
-   font-weight: bold;
-}
-.landing-divs{
-    margin: auto;
-    border: none;
-    border-radius: 5px;
-    display: flex;
-    width:450px;
-    height:300px;
-    padding: 10px 20px;
-    text-align: justify;
-    position: relative;
-    margin-bottom: 10px;
-    flex-direction: column;
-    background: #455A64;
-}
-button.btn-ver_mais{
-    width: 100%;
-    float: left;
-    padding: 9px 10px;
-    border-radius: 4px;
-    position: relative;
-    background:#E0E0E0;
-    border: none;
-}
-button.btn-ver_mais a{
-    color: #407BFF;
-    font-weight: 900;
-}
-/* PÀRTE CONTEUDO DOS PROJETOS*/
-
 /* PÀRTE CONTEUDO SOBRE*/
+.container-sobre{
+    background:#FFFFEE;
+    height: 90vh;
+}
 .landing-sobre{
     width: 100%;
     height: 100%;
     margin: auto;
-    bottom: 40px;
+    bottom: 60px;
     display: flex;
     align-items: center;
     position: relative;
-    
-}
-.conteudo-sobre{
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 700px;
-    text-align: justify;
-    font-weight: 100;
-    font-size: 1.5em;
+   
+
 }
 div.titulo{
     justify-content: space-between;
@@ -239,8 +205,9 @@ h1.titulo-sobre{
     color: #407BFF;
     font-weight: 900;
     font-size: 2.5em;
-    
+    margin-top: 40px;
 }
+
 .banner-sobre{
     width: 33%;
     position: relative;
@@ -265,7 +232,81 @@ h1.titulo-sobre{
 .landing-banner .landing-banner .landing-banner img {
      animation: float left 8s ease-in-out infinite;
 }
+
+.conteudo-sobre{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    text-align: justify;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+.text-sobre p{
+    line-height: 2.2rem;
+}
 /* PÀRTE CONTEUDO SOBRE*/
+
+/* PÀRTE CONTEUDO DOS PROJETOS*/
+.container-projetos{
+    background: #407BFF;
+    height: 90vh;
+}
+.text-titulo{
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    padding: 25px 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+.landing-central{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px 15px;
+    margin: auto;
+   position: relative;
+   
+}
+.landing-divs{
+    width:500px;
+    margin: auto;
+    height:280px;
+    border: none;
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+    background: #ffffff;
+    flex-direction: column;
+    
+}
+button.btn-ver_mais{
+    width: 90%;
+    padding: 10px 10px;
+    border-radius: 4px;
+    position: relative;
+    background:#407BFF;
+    border: none;
+    position: absolute;
+   
+}
+button.btn-ver_mais a{
+    color: #ffffff;
+    font-weight: 900;
+    border: none;
+    position: relative;
+}
+/* PÀRTE CONTEUDO DOS PROJETOS*/
+
+
 
 
 
