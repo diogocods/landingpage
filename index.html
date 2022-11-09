@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imgs/banner_03.png" type="image/x-icon">
     <title>Landingpage</title>
+    <!--script>alert("pagina em desenvolvimento");</script-->
 </head>
-    <script> alert("Pagina ainda em desenvolvimento...");</script>
 <body>
     
     <div class="landing-page">
+
         <!-- PARTE DO HEADER-->
+        
         <header class="cabecalho">
             <nav class="menu"> 
                 <ul>
                     <a href="" class="logo"><span>Diogocods.</span></a>
                     <li><a href="">Home</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                     <li><a href="">Contato</a></li>
                 </ul>
             </nav>
@@ -27,73 +29,64 @@
         <!-- PARTE DO HEADER-->
         
         <!-- PARTE DO LANDING CONTAINER-->
-        <div class="landing-container">
-            <section class="conteudo">
-                <h1 class="titulo-h1">Ola, eu sou Diogo Gomes</h1>
-                <h2 class="titulo-h2">Desenvolvedor<span class="text-edit"> frontend</span></h2>
-                <span class="conteudo-text">
-                   <p> Codificando soluções e levando entretenimento ao pblico web.</p>
-                </span>
-                <span class="btns">
-                    <button><a href="">linkedin</a></button>
-                    <button><a href="">Github</a></button>
-                </span>
-            </section>
-            <img src="imgs/banner.png" alt="" class="landing-banner">
+        <div class="container-header">
+            <div class="landing-container">
+                <section class="conteudo">
+                    <h1 class="titulo-h1">Ola, eu sou Diogo Gomes</h1>
+                    <h2 class="titulo-h2">Desenvolvedor<span class="text-edit"> frontend</span></h2>
+                    <p>
+                        O desenvolvedor front-end é responsável pela experiência do usuário dentro de uma aplicação web.
+                        É ele quem vai desenhar e desenvolver as páginas com as quais, posteriormente, o usuário irá interagir.
+                    </p>
+                    <span class="conteudo-text">
+                        <p class="frase"> Codificando soluções e levando entretenimento ao publico web.</p>
+                    </span>
+                    <span class="btns">
+                        <button>
+                            <a href="https://www.linkedin.com/in/diogo-gomes-72462024b/" target="_blank">linkedin</a>
+                        </button>
+                        <button>
+                            <a href="https://github.com/diogocods" target="_blank">Github</a>
+                        </button>
+                    </span>
+                </section>
+                <img src="/imgs/banner.png" alt="" class="landing-banner">
+            </div>
         </div>
-       <!-- PARTE DO LANDING CONTAINER-->
+        <!-- PARTE DO LANDING CONTAINER-->
+
+         <!-- PARTE DO SOBRE-->
+         <div class="container-sobre">   
+            <div class="titulo">
+                <h1 class="titulo-sobre" id="sobre">Sobre Me</h1>
+            </div>
+            <div class="landing-sobre">
+                <img src="/imgs/banner_03.png" alt="" class="banner-sobre">
+                <div class="conteudo-sobre">
+                    <div class="text-sobre">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+         <!-- PARTE DO SOBRE-->
 
         <!-- PARTE DOS PROJETOS-->
-        <div class="text-titulo" id="projetos">
-            <h1>projetos Desenvolvidos</h1>
-        </div>
-        <div class="landing-central">      
-            <div class="landing-divs">
-            <p>Desing 01</p>
-            <div>
-                <br>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged.
-                </p>
+        <div class="container-projetos">
+            <div class="text-titulo" id="projetos">
+                <h1>projetos Desenvolvidos</h1>
             </div>
-            <div><br><button class="btn-ver_mais"><a href="">Ver mais</a></button></div>
-            </div>
-            <div class="landing-divs">
-                <p>Desing 02</p>
-                <div>
-                    <br>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, 
-                        remaining essentially unchanged.
-                    </p>
-                </div>
-                <div><br><button class="btn-ver_mais"><a href="">Ver mais</a></button></div>  
-            </div>
-            <div class="landing-divs">
-                <p>Desing 03</p>
-                <div>
-                    <br>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, 
-                        remaining essentially unchanged.
-                    </p>
-                </div>
-                <div><br><button class="btn-ver_mais"><a href="">Ver mais</a></button></div>   
-            </div>
-        </div>
-        <div class="landing-central">   
-            <div class="landing-divs">
-                <p>Desing 04</p>
+            <div class="landing-central">      
+                <div class="landing-divs">
+                <p>Desing 01</p>
                 <div>
                     <br>
                     <p>
@@ -105,59 +98,83 @@
                     </p>
                 </div>
                 <div><br><button class="btn-ver_mais"><a href="">Ver mais</a></button></div>
-            </div>
-            <div class="landing-divs">
-                <p>Desing 05</p>
-                <div>
-                    <br>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, 
-                        remaining essentially unchanged.
-                    </p>
                 </div>
-                <div><br><button class="btn-ver_mais"><a href="">Ver mais</a></button></div>
-            </div>
-            <div class="landing-divs">
-                <p>Desing 06</p>
-                <div>
-                    <br>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, 
-                        remaining essentially unchanged.
-                    </p>
+                <div class="landing-divs">
+                    <p>Desing 02</p>
+                    <div>
+                        <br>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged.
+                        </p>
+                    </div>
+                    <div><br><button class="btn-ver_mais"><a href="">Ver mais</a></button></div>  
                 </div>
-                <div><br><button class="btn-ver_mais"><a href="">Ver mais</a></button></div>  
+                <div class="landing-divs">
+                    <p>Desing 03</p>
+                    <div>
+                        <br>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged.
+                        </p>
+                    </div>
+                    <div><br><button class="btn-ver_mais"><a href="">Ver mais</a></button></div>   
+                </div>
+            </div>
+            <div class="landing-central">   
+                <div class="landing-divs">
+                    <p>Desing 04</p>
+                    <div>
+                        <br>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged.
+                        </p>
+                    </div>
+                    <div><br><button class="btn-ver_mais"><a href="">Ver mais</a></button></div>
+                </div>
+                <div class="landing-divs">
+                    <p>Desing 05</p>
+                    <div>
+                        <br>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged.
+                        </p>
+                    </div>
+                    <div><br><button class="btn-ver_mais"><a href="">Ver mais</a></button></div>
+                </div>
+                <div class="landing-divs">
+                    <p>Desing 06</p>
+                    <div>
+                        <br>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged.
+                        </p>
+                    </div>
+                    <div><br><button class="btn-ver_mais"><a href="">Ver mais</a></button></div>  
+                </div>
             </div>
         </div>
         <!-- PARTE DOS PROJETOS-->
 
-         <!-- PARTE DO SOBRE-->
-        <div class="titulo">
-            <h1 class="titulo-sobre" id="sobre">Sobre Me</h1>
-        </div>
-        <div class="landing-sobre">
-            <img src="imgs/banner_03.png" alt="" class="banner-sobre">
-            <div class="conteudo-sobre">
-                <section class="text-sobre">
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, 
-                        remaining essentially unchanged.
-                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                </section> 
-            </div>
-         </div>
-         <!-- PARTE DO SOBRE-->
          <div class="conteudo-ropaper">
             <footer class="landing-rodaper">
 
